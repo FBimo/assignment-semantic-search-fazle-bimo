@@ -1,0 +1,9 @@
+{
+  "embedding_model": "gemini-embedding-001",
+  "task_type": "RETRIEVAL_DOCUMENT",
+  "dimension": 3072,
+  "n_vectors": 59,
+  "metric": "inner_product_on_l2_normalized (cosine similarity)",
+  "id_field": "faq_id",
+  "source": "data/ecommerce_faq_knowledge_base.csv"
+}

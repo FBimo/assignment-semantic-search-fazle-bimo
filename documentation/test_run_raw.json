@@ -1,0 +1,389 @@
+{
+  "embedding_model": "gemini-embedding-001",
+  "llm_model": "gemini-3.8-flash",
+  "metrics": {
+    "hit@1": 1.0,
+    "hit@3": 1.0,
+    "mrr": 1.0
+  },
+  "results": [
+    {
+      "type": "direct",
+      "query": "Bagaimana cara membatalkan pesanan saya?",
+      "expected_ids": [
+        3
+      ],
+      "answer": "Halo! Anda dapat membatalkan pesanan melalui halaman 'Pesanan Saya' selama status pesanan masih 'Diproses'. Perlu diketahui bahwa setelah status pesanan berubah menjadi 'Dikirim', pembatalan sudah tidak dapat dilakukan. [FAQ #3]",
+      "sources": [
+        {
+          "rank": 1,
+          "faq_id": 3,
+          "category": "Pemesanan",
+          "question": "Bagaimana cara membatalkan pesanan yang sudah dibuat?",
+          "answer": "Pesanan dapat dibatalkan melalui halaman 'Pesanan Saya' selama status masih 'Diproses'. Setelah status berubah menjadi 'Dikirim', pembatalan tidak dapat dilakukan.",
+          "score": 0.7777
+        },
+        {
+          "rank": 2,
+          "faq_id": 24,
+          "category": "Pengembalian",
+          "question": "Bagaimana prosedur pengembalian barang yang tidak sesuai?",
+          "answer": "Ajukan pengembalian melalui menu 'Pesanan Saya' dengan memilih alasan dan menyertakan bukti foto, maksimal 3 hari sejak barang diterima.",
+          "score": 0.7181
+        },
+        {
+          "rank": 3,
+          "faq_id": 44,
+          "category": "Produk",
+          "question": "Bagaimana jika produk yang saya pesan ternyata kehabisan stok?",
+          "answer": "Jika stok habis setelah pesanan dibuat, penjual akan membatalkan sebagian/seluruh pesanan dan dana otomatis dikembalikan.",
+          "score": 0.6976
+        }
+      ]
+    },
+    {
+      "type": "direct",
+      "query": "Metode pembayaran apa saja yang bisa saya gunakan?",
+      "expected_ids": [
+        17
+      ],
+      "answer": "Halo! Metode pembayaran yang dapat Anda gunakan meliputi transfer bank, kartu kredit/debit, e-wallet, serta pembayaran melalui minimarket rekanan [FAQ #17].",
+      "sources": [
+        {
+          "rank": 1,
+          "faq_id": 17,
+          "category": "Pembayaran",
+          "question": "Metode pembayaran apa saja yang tersedia?",
+          "answer": "Kami mendukung transfer bank, kartu kredit/debit, e-wallet, dan pembayaran melalui minimarket rekanan.",
+          "score": 0.7883
+        },
+        {
+          "rank": 2,
+          "faq_id": 22,
+          "category": "Pembayaran",
+          "question": "Apakah bisa membayar menggunakan lebih dari satu metode sekaligus?",
+          "answer": "Saat ini sistem belum mendukung pembayaran gabungan (split payment) dalam satu transaksi.",
+          "score": 0.7266
+        },
+        {
+          "rank": 3,
+          "faq_id": 20,
+          "category": "Pembayaran",
+          "question": "Apakah saya bisa membayar dengan cicilan?",
+          "answer": "Fitur cicilan tersedia untuk transaksi dengan kartu kredit tertentu pada nominal minimal yang ditentukan pihak bank.",
+          "score": 0.6996
+        }
+      ]
+    },
+    {
+      "type": "paraphrase",
+      "query": "Duit saya kapan balik kalau barangnya sudah saya retur?",
+      "expected_ids": [
+        25
+      ],
+      "answer": "Halo! Dana refund Anda biasanya akan diproses dalam waktu 3-7 hari kerja setelah barang yang dikembalikan diterima dan diverifikasi oleh penjual. [FAQ #25]",
+      "sources": [
+        {
+          "rank": 1,
+          "faq_id": 25,
+          "category": "Pengembalian",
+          "question": "Berapa lama proses refund setelah pengembalian disetujui?",
+          "answer": "Dana refund biasanya diproses dalam 3-7 hari kerja setelah barang dikembalikan diterima dan diverifikasi penjual.",
+          "score": 0.7856
+        },
+        {
+          "rank": 2,
+          "faq_id": 27,
+          "category": "Pengembalian",
+          "question": "Ke mana dana refund akan dikembalikan?",
+          "answer": "Dana refund akan dikembalikan ke metode pembayaran awal, atau ke saldo akun apabila memilih opsi tersebut saat pengajuan.",
+          "score": 0.7322
+        },
+        {
+          "rank": 3,
+          "faq_id": 24,
+          "category": "Pengembalian",
+          "question": "Bagaimana prosedur pengembalian barang yang tidak sesuai?",
+          "answer": "Ajukan pengembalian melalui menu 'Pesanan Saya' dengan memilih alasan dan menyertakan bukti foto, maksimal 3 hari sejak barang diterima.",
+          "score": 0.7286
+        }
+      ]
+    },
+    {
+      "type": "paraphrase",
+      "query": "Saya nggak ingat kata sandi, gimana caranya bisa masuk lagi?",
+      "expected_ids": [
+        32
+      ],
+      "answer": "Halo! Jika Anda lupa kata sandi akun, Anda dapat mengaturnya ulang dengan langkah-langkah berikut:\n\n1. Klik 'Lupa Password' pada halaman login.\n2. Masukkan email yang terdaftar.\n3. Ikuti instruksi reset password yang dikirimkan ke email Anda.\n\n[FAQ #32]",
+      "sources": [
+        {
+          "rank": 1,
+          "faq_id": 32,
+          "category": "Akun",
+          "question": "Saya lupa password akun, bagaimana cara mengaturnya ulang?",
+          "answer": "Klik 'Lupa Password' pada halaman login, masukkan email terdaftar, lalu ikuti instruksi reset password yang dikirim ke email Anda.",
+          "score": 0.7573
+        },
+        {
+          "rank": 2,
+          "faq_id": 55,
+          "category": "Akun",
+          "question": "Kenapa akun saya tiba-tiba tidak bisa login?",
+          "answer": "Akun dapat terkunci sementara karena kesalahan login berulang atau terindikasi aktivitas mencurigakan. Silakan reset password atau hubungi customer service.",
+          "score": 0.7005
+        },
+        {
+          "rank": 3,
+          "faq_id": 31,
+          "category": "Akun",
+          "question": "Bagaimana cara mendaftar akun baru?",
+          "answer": "Klik tombol 'Daftar' di halaman utama, isi data diri seperti nama, email, dan nomor telepon, lalu verifikasi melalui kode OTP.",
+          "score": 0.6523
+        }
+      ]
+    },
+    {
+      "type": "paraphrase",
+      "query": "Bisa nyicil nggak kalau belanja di sini?",
+      "expected_ids": [
+        20
+      ],
+      "answer": "Halo! Ya, Anda bisa membayar dengan cicilan untuk transaksi menggunakan kartu kredit tertentu. Namun, fitur ini berlaku pada nominal minimal yang ditentukan oleh pihak bank terkait. [FAQ #20]",
+      "sources": [
+        {
+          "rank": 1,
+          "faq_id": 20,
+          "category": "Pembayaran",
+          "question": "Apakah saya bisa membayar dengan cicilan?",
+          "answer": "Fitur cicilan tersedia untuk transaksi dengan kartu kredit tertentu pada nominal minimal yang ditentukan pihak bank.",
+          "score": 0.7974
+        },
+        {
+          "rank": 2,
+          "faq_id": 22,
+          "category": "Pembayaran",
+          "question": "Apakah bisa membayar menggunakan lebih dari satu metode sekaligus?",
+          "answer": "Saat ini sistem belum mendukung pembayaran gabungan (split payment) dalam satu transaksi.",
+          "score": 0.7003
+        },
+        {
+          "rank": 3,
+          "faq_id": 17,
+          "category": "Pembayaran",
+          "question": "Metode pembayaran apa saja yang tersedia?",
+          "answer": "Kami mendukung transfer bank, kartu kredit/debit, e-wallet, dan pembayaran melalui minimarket rekanan.",
+          "score": 0.6947
+        }
+      ]
+    },
+    {
+      "type": "paraphrase",
+      "query": "Kiriman saya udah telat seminggu dari perkiraan, harus ngapain?",
+      "expected_ids": [
+        12
+      ],
+      "answer": "Halo, mohon maaf atas ketidaknyamanan yang Anda alami. Karena paket Anda telah melebihi estimasi pengiriman lebih dari 3 hari, silakan hubungi customer service dengan menyertakan nomor resi Anda agar dapat ditelusuri lebih lanjut. [FAQ #12]",
+      "sources": [
+        {
+          "rank": 1,
+          "faq_id": 12,
+          "category": "Pengiriman",
+          "question": "Bagaimana jika paket saya belum sampai melebihi estimasi?",
+          "answer": "Jika paket melebihi estimasi pengiriman lebih dari 3 hari, silakan hubungi customer service dengan menyertakan nomor resi untuk ditelusuri lebih lanjut.",
+          "score": 0.7858
+        },
+        {
+          "rank": 2,
+          "faq_id": 14,
+          "category": "Pengiriman",
+          "question": "Kenapa status pengiriman saya tidak berubah selama beberapa hari?",
+          "answer": "Status yang tidak berubah bisa disebabkan keterlambatan update sistem kurir. Disarankan menunggu 1x24 jam sebelum melaporkan ke customer service.",
+          "score": 0.765
+        },
+        {
+          "rank": 3,
+          "faq_id": 52,
+          "category": "Pengiriman",
+          "question": "Kenapa nomor resi saya belum bisa dilacak di website kurir?",
+          "answer": "Nomor resi baru dapat dilacak setelah paket diserahterimakan ke pihak kurir, biasanya butuh waktu beberapa jam setelah status 'Dikirim'.",
+          "score": 0.7218
+        }
+      ]
+    },
+    {
+      "type": "out_of_kb",
+      "query": "Apakah platform ini juga menjual tiket pesawat dan hotel?",
+      "expected_ids": [],
+      "answer": "Maaf, informasi tersebut belum tersedia di FAQ kami. Silakan hubungi customer service kami untuk mendapatkan informasi dan bantuan lebih lanjut mengenai hal tersebut.",
+      "sources": [
+        {
+          "rank": 1,
+          "faq_id": 1,
+          "category": "Pemesanan",
+          "question": "Bagaimana cara melakukan pemesanan di platform ini?",
+          "answer": "Pilih produk yang diinginkan, klik 'Tambah ke Keranjang', lalu lanjutkan ke halaman checkout untuk mengisi alamat pengiriman dan metode pembayaran.",
+          "score": 0.6773
+        },
+        {
+          "rank": 2,
+          "faq_id": 17,
+          "category": "Pembayaran",
+          "question": "Metode pembayaran apa saja yang tersedia?",
+          "answer": "Kami mendukung transfer bank, kartu kredit/debit, e-wallet, dan pembayaran melalui minimarket rekanan.",
+          "score": 0.6667
+        },
+        {
+          "rank": 3,
+          "faq_id": 2,
+          "category": "Pemesanan",
+          "question": "Apakah saya bisa memesan tanpa membuat akun?",
+          "answer": "Saat ini pemesanan hanya bisa dilakukan setelah membuat akun, agar Anda dapat melacak status pesanan dengan mudah.",
+          "score": 0.6589
+        }
+      ]
+    },
+    {
+      "type": "out_of_kb",
+      "query": "Apakah bisa bayar di tempat (COD) saat barang sampai?",
+      "expected_ids": [],
+      "answer": "Maaf, informasi tersebut belum tersedia di FAQ kami. Silakan menghubungi tim customer service kami untuk memastikan ketersediaan metode pembayaran di tempat (COD).",
+      "sources": [
+        {
+          "rank": 1,
+          "faq_id": 17,
+          "category": "Pembayaran",
+          "question": "Metode pembayaran apa saja yang tersedia?",
+          "answer": "Kami mendukung transfer bank, kartu kredit/debit, e-wallet, dan pembayaran melalui minimarket rekanan.",
+          "score": 0.6911
+        },
+        {
+          "rank": 2,
+          "faq_id": 11,
+          "category": "Pengiriman",
+          "question": "Apakah tersedia opsi pengiriman same-day?",
+          "answer": "Pengiriman same-day tersedia untuk beberapa kota besar tertentu, tergantung ketersediaan kurir di lokasi penjual.",
+          "score": 0.6881
+        },
+        {
+          "rank": 3,
+          "faq_id": 1,
+          "category": "Pemesanan",
+          "question": "Bagaimana cara melakukan pemesanan di platform ini?",
+          "answer": "Pilih produk yang diinginkan, klik 'Tambah ke Keranjang', lalu lanjutkan ke halaman checkout untuk mengisi alamat pengiriman dan metode pembayaran.",
+          "score": 0.6862
+        }
+      ]
+    }
+  ],
+  "keyword_baseline": [
+    {
+      "type": "direct",
+      "query": "Bagaimana cara membatalkan pesanan saya?",
+      "expected": [
+        3
+      ],
+      "keyword_top1 (faq, overlap)": [
+        3,
+        1.0
+      ],
+      "keyword_rank_expected": 1,
+      "semantic_top1": 3,
+      "semantic_rank_expected": 1
+    },
+    {
+      "type": "direct",
+      "query": "Metode pembayaran apa saja yang bisa saya gunakan?",
+      "expected": [
+        17
+      ],
+      "keyword_top1 (faq, overlap)": [
+        1,
+        0.667
+      ],
+      "keyword_rank_expected": 2,
+      "semantic_top1": 17,
+      "semantic_rank_expected": 1
+    },
+    {
+      "type": "paraphrase",
+      "query": "Duit saya kapan balik kalau barangnya sudah saya retur?",
+      "expected": [
+        25
+      ],
+      "keyword_top1 (faq, overlap)": [
+        1,
+        0.0
+      ],
+      "keyword_rank_expected": null,
+      "semantic_top1": 25,
+      "semantic_rank_expected": 1
+    },
+    {
+      "type": "paraphrase",
+      "query": "Saya nggak ingat kata sandi, gimana caranya bisa masuk lagi?",
+      "expected": [
+        32
+      ],
+      "keyword_top1 (faq, overlap)": [
+        41,
+        0.25
+      ],
+      "keyword_rank_expected": null,
+      "semantic_top1": 32,
+      "semantic_rank_expected": 1
+    },
+    {
+      "type": "paraphrase",
+      "query": "Bisa nyicil nggak kalau belanja di sini?",
+      "expected": [
+        20
+      ],
+      "keyword_top1 (faq, overlap)": [
+        42,
+        0.5
+      ],
+      "keyword_rank_expected": null,
+      "semantic_top1": 20,
+      "semantic_rank_expected": 1
+    },
+    {
+      "type": "paraphrase",
+      "query": "Kiriman saya udah telat seminggu dari perkiraan, harus ngapain?",
+      "expected": [
+        12
+      ],
+      "keyword_top1 (faq, overlap)": [
+        1,
+        0.0
+      ],
+      "keyword_rank_expected": null,
+      "semantic_top1": 12,
+      "semantic_rank_expected": 1
+    },
+    {
+      "type": "out_of_kb",
+      "query": "Apakah platform ini juga menjual tiket pesawat dan hotel?",
+      "expected": "-",
+      "keyword_top1 (faq, overlap)": [
+        1,
+        0.2
+      ],
+      "keyword_rank_expected": "-",
+      "semantic_top1": 1,
+      "semantic_rank_expected": "-"
+    },
+    {
+      "type": "out_of_kb",
+      "query": "Apakah bisa bayar di tempat (COD) saat barang sampai?",
+      "expected": "-",
+      "keyword_top1 (faq, overlap)": [
+        9,
+        0.2
+      ],
+      "keyword_rank_expected": "-",
+      "semantic_top1": 17,
+      "semantic_rank_expected": "-"
+    }
+  ]
+}
